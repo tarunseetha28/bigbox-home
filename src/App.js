@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
 import appstore from './assets/astore.png'
+import placeholderStore from './assets/placeholder-store.png'
 import gplay from './assets/gplay.png'
 import closeicon from './assets/closeicon.svg'
 import videostore from './assets/videostore.svg'
@@ -139,7 +140,7 @@ const App = () => {
                       <img src={item.brand_logo_url} alt="" className="brand-logo" />
                       <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
 
-                        <img className="home-storeImg" src={item.cover_pic_mobile_url} alt="" />
+                        <img className="home-storeImg" src={item.cover_pic_mobile_url || placeholderStore} alt="" />
                         <h1>{item.brand.name}</h1>
                       </a>
                     </div>
