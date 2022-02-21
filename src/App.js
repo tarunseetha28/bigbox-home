@@ -7,9 +7,12 @@ import placeholderStore from './assets/placeholder-store.png'
 import gplay from './assets/gplay.png'
 import closeicon from './assets/closeicon.svg'
 import videostore from './assets/videostore.svg'
+import hovervideostore from './assets/hovervideostore.svg'
 import bigboxlogo from './assets/bigboxlogo.svg'
 import createstore from './assets/createstore.svg'
+import hovercreatestore from './assets/hovercreatestore.svg'
 import gettheapp from './assets/gettheapp.svg'
+import hovergettheapp from './assets/hovergettheapp.svg'
 import social1 from './assets/social1.svg'
 import social2 from './assets/social2.svg'
 import social3 from './assets/social3.svg'
@@ -65,8 +68,8 @@ const App = () => {
       .outerHTML = "";
 
   }
-
-
+  const [createStore, setcreateStore] = useState(createstore)
+  const [getTheApp, setgetTheApp] = useState(gettheapp)
   return (
     <div className="App">
 
@@ -80,8 +83,8 @@ const App = () => {
           <p>help</p>
         </div>
         <div className="header-right">
-          <img src={gettheapp} alt="" className="header-btn" />
-          <img src={createstore} alt="" className="header-btn" />
+          <img src={getTheApp} alt="" className="header-btn" onMouseOver={() => setgetTheApp(hovergettheapp)} onMouseOut={() => setgetTheApp(gettheapp)} />
+          <img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} />
         </div>
       </div>
 
