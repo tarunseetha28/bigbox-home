@@ -23,10 +23,12 @@ const App = () => {
   const [store, setStore] = useState([]);
   let attribute;
   let catid = 10;
-
+  var catname = 'grocery';
   const [selectedCatID, setSelectedCatID] = useState();
-
   function showCat(catid) { setSelectedCatID(catid); }
+
+  const [selectedCatName, setSelectedCatName] = useState();
+  function showCatName(catname) { setSelectedCatName(catname); }
 
   const fetchData = () => {
 
@@ -115,7 +117,7 @@ const App = () => {
               // <option onClick={() => showCat(item.id)} style={{ cursor: "pointer" }}>
               //   {item.name}
               // </option>
-              <List onClick={() => showCat(item.id)} style={{ cursor: "pointer", padding: "5px" }}>
+              <List onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer", padding: "5px" }}>
                 {item.name}
               </List>
             ))
@@ -126,7 +128,7 @@ const App = () => {
 
         <div className="centerbody">
           <div>
-            <p className="numberStores">{store.length} {store.length > 1 ? <span>stores</span> : <span>store</span>}</p>
+            <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
           </div>
 
           {store.length === 0 ? <div className="home-body">no store found</div> :
@@ -137,11 +139,12 @@ const App = () => {
 
                   return (
                     <div key={item.id} className="home-store" >
-                      <img src={item.brand_logo_url} alt="" className="brand-logo" />
-                      <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
 
+                      <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
+                        <img src={item.brand_logo_url} alt="" className="brand-logo" />
                         <img className="home-storeImg" src={item.cover_pic_mobile_url || placeholderStore} alt="" />
                         <h1>{item.brand.name}</h1>
+                        <span>{item.name}, {item.city}</span>
                       </a>
                     </div>
                   )

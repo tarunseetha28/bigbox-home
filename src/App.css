@@ -21,13 +21,21 @@
 .home-store h1{
     font-size:18px;
     color: black;
+    margin-bottom:5px;
 }
+
+.home-store span{
+    font-size:15px;
+    color: rgba(68, 68, 68, 0.87);
+}
+
 
 .home-storeImg{
     width: 270px;
     height:270px;
     object-fit:cover;
     border-radius: 25px;
+    position: relative;
 }
 .numberStores{
     padding-left: 50px;
@@ -58,10 +66,11 @@
 }
 .brand-logo{
     border-radius: 100%;
-    width: 50px;
-    margin-bottom: -55px;
-    z-index: 99;
-    margin-left: 6px;
+    width: 75px;
+    margin-left:20px;
+    margin-top:20px;
+    position:absolute;
+    z-index:999;
 }
 
 .one {
@@ -137,6 +146,7 @@
 }
 
 .footer{
+    margin-top:100px;
     background-color: black;
     color:white;
     display: flex;
@@ -189,3 +199,6 @@
     border-radius: 5px;
   }
 
+.lengthStores{   
+    font-weight: 600;
+}
