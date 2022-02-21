@@ -75,7 +75,7 @@ const App = () => {
 
       <div className="header">
         <div className="header-left">
-          <img src={bigboxlogo} alt="" style={{ marginRight: "20px" }} />
+          <a href=""><img src={bigboxlogo} alt="" style={{ marginRight: "40px" }} /></a>
           <p>shop</p>
           <p>what is bigbox?</p>
           <p>bigbox app</p>
@@ -83,8 +83,8 @@ const App = () => {
           <p>help</p>
         </div>
         <div className="header-right">
-          <img src={getTheApp} alt="" className="header-btn" onMouseOver={() => setgetTheApp(hovergettheapp)} onMouseOut={() => setgetTheApp(gettheapp)} />
-          <img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} />
+          <a href="http://onelink.to/pbfgv8"><img src={getTheApp} alt="" className="header-btn" onMouseOver={() => setgetTheApp(hovergettheapp)} onMouseOut={() => setgetTheApp(gettheapp)} /></a>
+          <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K"><img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} /></a>
         </div>
       </div>
 

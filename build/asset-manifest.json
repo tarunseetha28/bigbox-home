@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/bigbox-home/static/css/main.85a89882.css",
-    "main.js": "/bigbox-home/static/js/main.cc5e2ff8.js",
+    "main.css": "/bigbox-home/static/css/main.08eace50.css",
+    "main.js": "/bigbox-home/static/js/main.578e1eb8.js",
     "static/js/787.ce051a7f.chunk.js": "/bigbox-home/static/js/787.ce051a7f.chunk.js",
+    "static/media/hovergettheapp.svg": "/bigbox-home/static/media/hovergettheapp.f933be9a5eee77c860f78221dfb61e5a.svg",
+    "static/media/gettheapp.svg": "/bigbox-home/static/media/gettheapp.eed655d506696b005b48cf3422ae12c5.svg",
     "static/media/logo.svg": "/bigbox-home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/bigboxlogo.svg": "/bigbox-home/static/media/bigboxlogo.e0f32fd6337d04fc0f0fbf3a832fac89.svg",
     "static/media/social2.svg": "/bigbox-home/static/media/social2.cd660eed869961cc22446cf2e00b4365.svg",
     "static/media/social3.svg": "/bigbox-home/static/media/social3.a8ace49a775322f8b8229e6f6c310d7f.svg",
     "static/media/social5.svg": "/bigbox-home/static/media/social5.386a6392f637430804c1c813130563ad.svg",
-    "static/media/gettheapp.svg": "/bigbox-home/static/media/gettheapp.cc28258e99f1553544e641450b030fce.svg",
-    "static/media/hovergettheapp.svg": "/bigbox-home/static/media/hovergettheapp.5acd788b52ab1fe4bb555df0bd59f15b.svg",
     "static/media/closeicon.svg": "/bigbox-home/static/media/closeicon.4e8642bffbe31f433d5aded23d5a6714.svg",
-    "static/media/hovercreatestore.svg": "/bigbox-home/static/media/hovercreatestore.46947635a071bc45ca0d091e26151013.svg",
-    "static/media/createstore.svg": "/bigbox-home/static/media/createstore.72cb7338e10451db422f0d5bcbdf84d5.svg",
+    "static/media/createstore.svg": "/bigbox-home/static/media/createstore.e41fd1595373434ff1332fcf2db093cb.svg",
     "index.html": "/bigbox-home/index.html",
+    "static/media/hovercreatestore.svg": "/bigbox-home/static/media/hovercreatestore.efbb185a4da2591d1197231ed0fd77c3.svg",
     "static/media/social4.svg": "/bigbox-home/static/media/social4.9d2cf75b7ac32718ef52e51e017d7349.svg",
     "static/media/hovervideostore.svg": "/bigbox-home/static/media/hovervideostore.11292c7287b31ab07993e4170c578564.svg",
     "static/media/videostore.svg": "/bigbox-home/static/media/videostore.dd8d659b44b83bcdc418c7ac794f96e6.svg",
     "static/media/social1.svg": "/bigbox-home/static/media/social1.9ac21481023548daaa519c9e0507e68f.svg",
-    "main.85a89882.css.map": "/bigbox-home/static/css/main.85a89882.css.map",
-    "main.cc5e2ff8.js.map": "/bigbox-home/static/js/main.cc5e2ff8.js.map",
+    "main.08eace50.css.map": "/bigbox-home/static/css/main.08eace50.css.map",
+    "main.578e1eb8.js.map": "/bigbox-home/static/js/main.578e1eb8.js.map",
     "787.ce051a7f.chunk.js.map": "/bigbox-home/static/js/787.ce051a7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85a89882.css",
-    "static/js/main.cc5e2ff8.js"
+    "static/css/main.08eace50.css",
+    "static/js/main.578e1eb8.js"
   ]
 }

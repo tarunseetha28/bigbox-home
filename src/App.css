@@ -3,6 +3,10 @@
     min-height: 900px
 }
 
+a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .home-cat{
     position: sticky;
@@ -138,6 +142,8 @@
     display: flex;
 }
 
+
+
 .header-btn{
     height:40px;
     margin-top: auto;
@@ -163,7 +169,7 @@
 .footer-left >p{
     margin:0;
     font-size:30px;
-    font-weight:600;
+    font-weight:400;
 }
 
 .footer-left >span{
