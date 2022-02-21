@@ -54,7 +54,18 @@ a{
     column-gap: 30px; 
     row-gap:20px;
     align-content:flex-start;
+    width: 100%;
 }
+
+.home-body-nostore-body{
+    width:92%
+}
+
+.home-body-nostore >img{
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .centerbody{
     flex: 85% 1;
     display: flex;
@@ -103,7 +114,7 @@ a{
 }
 
 .promo-img{
- height:30px;
+ height:35px;
  margin-top: auto;
  margin-bottom: auto;
  margin-left: 20px;
@@ -207,4 +218,14 @@ a{
 
 .lengthStores{   
     font-weight: 600;
+}
+
+.home-body-nostore{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-body-nostore >p{
+    color:#a7a7a7;
+    text-align: center;
 }

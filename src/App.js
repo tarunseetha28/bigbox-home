@@ -7,11 +7,11 @@ import placeholderStore from './assets/placeholder-store.png'
 import gplay from './assets/gplay.png'
 import closeicon from './assets/closeicon.svg'
 import videostore from './assets/videostore.svg'
-import hovervideostore from './assets/hovervideostore.svg'
 import bigboxlogo from './assets/bigboxlogo.svg'
 import createstore from './assets/createstore.svg'
 import hovercreatestore from './assets/hovercreatestore.svg'
 import gettheapp from './assets/gettheapp.svg'
+import nostore from './assets/nostore.svg'
 import hovergettheapp from './assets/hovergettheapp.svg'
 import social1 from './assets/social1.svg'
 import social2 from './assets/social2.svg'
@@ -75,7 +75,7 @@ const App = () => {
 
       <div className="header">
         <div className="header-left">
-          <a href=""><img src={bigboxlogo} alt="" style={{ marginRight: "40px" }} /></a>
+          <a href="https://bigbox.online/"><img src={bigboxlogo} alt="" style={{ marginRight: "40px" }} /></a>
           <p>shop</p>
           <p>what is bigbox?</p>
           <p>bigbox app</p>
@@ -96,8 +96,8 @@ const App = () => {
       </div>
       <div id="ad1" className="promo">
         <p>get the shopping experience you deserve with our new and improved bigbox app</p>
-        <img src={appstore} alt="" className="promo-img" />
-        <img src={gplay} alt="" className="promo-img" />
+        <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804"><img src={appstore} alt="" className="promo-img" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox"><img src={gplay} alt="" className="promo-img" /></a>
         <button className="button" onClick={removeDiv1}>
           <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
         </button>
@@ -105,7 +105,7 @@ const App = () => {
 
       <div id="ad2" className="promo">
         <p>selling online? setup your video store with bigbox and sell easily through video calls</p>
-        <img src={videostore} alt="" className="promo-img" />
+        <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K?typeform-source=localhost"><img src={videostore} alt="" className="promo-img" /></a>
         <button className="button" onClick={removeDiv2}>
           <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
         </button>
@@ -134,7 +134,17 @@ const App = () => {
             <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
           </div>
 
-          {store.length === 0 ? <div className="home-body">no store found</div> :
+          {store.length === 0 ?
+            <div className="home-body">
+              <div className="home-body-nostore-body">
+                {/* <div style={{ flex: "0.2" }}>left</div> */}
+                <div className="home-body-nostore">
+                  <img src={nostore} alt="" />
+                  <p>uh oh! unfortunately,no stores found in this category. <br />good news! we're in talks with a lot of brands <br /> keep checking this frequently for more stores. </p>
+                </div>
+                {/* <div style={{ flex: "0.2" }}>right</div> */}
+              </div>
+            </div> :
             <div className="home-body">
 
               {
