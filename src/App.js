@@ -73,6 +73,7 @@ const App = () => {
   return (
     <div className="App">
 
+
       <div className="header">
         <div className="header-left">
           <a href="https://bigbox.online/"><img src={bigboxlogo} alt="" style={{ marginRight: "40px" }} /></a>
@@ -89,87 +90,90 @@ const App = () => {
       </div>
 
 
+      <div className="body-margins">
+        <div >
+          <h1 style={{ fontSize: "80px", marginBottom: "15px" }}>video call your favourite brands.</h1>
+          <h5 style={{ fontSize: "28px", marginTop: "0", marginBottom: "15px", fontWeight: 400 }}>discover, follow and shop from your favourite stores. anytime. anywhere.</h5>
+        </div>
+        <div id="ad1" className="promo">
+          <p>get the shopping experience you deserve with our new and improved bigbox app</p>
+          <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804"><img src={appstore} alt="" className="promo-img" /></a>
+          <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox"><img src={gplay} alt="" className="promo-img" /></a>
+          <button className="button" onClick={removeDiv1}>
+            <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
+          </button>
+        </div>
 
-      <div style={{ paddingLeft: "30px" }}>
-        <h1 style={{ fontSize: "80px", marginBottom: "5px" }}>video call your favourite brands.</h1>
-        <h5 style={{ fontSize: "28px", marginTop: "0", marginBottom: "15px", fontWeight: 400 }}>discover, follow and shop from your favourite stores. anytime. anywhere.</h5>
-      </div>
-      <div id="ad1" className="promo">
-        <p>get the shopping experience you deserve with our new and improved bigbox app</p>
-        <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804"><img src={appstore} alt="" className="promo-img" /></a>
-        <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox"><img src={gplay} alt="" className="promo-img" /></a>
-        <button className="button" onClick={removeDiv1}>
-          <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
-        </button>
-      </div>
-
-      <div id="ad2" className="promo">
-        <p>selling online? setup your video store with bigbox and sell easily through video calls</p>
-        <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K?typeform-source=localhost"><img src={videostore} alt="" className="promo-img" /></a>
-        <button className="button" onClick={removeDiv2}>
-          <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
-        </button>
-      </div>
-
-
-      <div className="body">
-        <div className="sidebar">
-          <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>
-          {
-            category.map((item) => (
-              // <option onClick={() => showCat(item.id)} style={{ cursor: "pointer" }}>
-              //   {item.name}
-              // </option>
-              <List onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer", padding: "5px" }}>
-                {item.name}
-              </List>
-            ))
-          }
-
+        <div id="ad2" className="promo">
+          <p>selling online? setup your video store with bigbox and sell easily through video calls</p>
+          <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K?typeform-source=localhost"><img src={videostore} alt="" className="promo-img" /></a>
+          <button className="button" onClick={removeDiv2}>
+            <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
+          </button>
         </div>
 
 
-        <div className="centerbody">
-          <div>
-            <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
+        <div className="body">
+          <div className="sidebar">
+            <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>
+            {
+              category.map((item) => (
+                // <option onClick={() => showCat(item.id)} style={{ cursor: "pointer" }}>
+                //   {item.name}
+                // </option>
+                <List onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer", padding: "5px" }}>
+                  {item.name}
+                </List>
+              ))
+            }
+
           </div>
 
-          {store.length === 0 ?
-            <div className="home-body">
-              <div className="home-body-nostore-body">
-                {/* <div style={{ flex: "0.2" }}>left</div> */}
-                <div className="home-body-nostore">
-                  <img src={nostore} alt="" />
-                  <p>uh oh! unfortunately,no stores found in this category. <br />good news! we're in talks with a lot of brands <br /> keep checking this frequently for more stores. </p>
-                </div>
-                {/* <div style={{ flex: "0.2" }}>right</div> */}
-              </div>
-            </div> :
-            <div className="home-body">
 
-              {
-                store.map((item) => {
-
-                  return (
-                    <div key={item.id} className="home-store" >
-
-                      <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
-                        <img src={item.brand_logo_url} alt="" className="brand-logo" />
-                        <img className="home-storeImg" src={item.cover_pic_mobile_url || placeholderStore} alt="" />
-                        <h1>{item.brand.name}</h1>
-                        <span>{item.name}, {item.city}</span>
-                      </a>
-                    </div>
-                  )
-
-                })
-
-              }
+          <div className="centerbody">
+            <div>
+              <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
             </div>
-          }
+
+            {store.length === 0 ?
+              <div className="home-body1">
+                <div className="home-body-nostore-body">
+                  {/* <div style={{ flex: "0.2" }}>left</div> */}
+                  <div className="home-body-nostore">
+                    <img src={nostore} alt="" />
+                    <p>uh oh! unfortunately, no stores found in this category. <br />good news! we're in talks with a lot of brands <br /> keep checking this frequently for more stores. </p>
+                  </div>
+                  {/* <div style={{ flex: "0.2" }}>right</div> */}
+                </div>
+              </div> :
+              <div className="home-body">
+
+                {
+                  store.map((item) => {
+
+                    return (
+                      <div key={item.id} className="home-store" >
+
+                        <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
+                          <img src={item.brand_logo_url} alt="" className="brand-logo" />
+                          <img className="home-storeImg" src={item.cover_pic_mobile_url || placeholderStore} alt="" />
+                          <h1>{item.brand.name}</h1>
+                          <span>{item.name}, {item.city}</span>
+                        </a>
+                      </div>
+
+
+
+                    )
+
+                  })
+
+                }
+              </div>
+            }
+          </div>
         </div>
       </div>
-
 
       <div className="footer">
         <div className="footer-left">
@@ -199,6 +203,7 @@ const App = () => {
             <br /><br />thats what bigbox is all about…<br /><br />we love hearing from our shoppers,<br />say hi to us at <span style={{ color: "#C9052C" }}> hello@bigbox.online</span></span>
         </div>
       </div>
+
     </div>
   );
 }
