@@ -128,14 +128,23 @@ const App = () => {
           </button>
         </div>
 
-        {/* <div>
-          {
-            category.map((item) => (
-              <Menu onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer" }}>
-                <Menu.Item >{item.name}</Menu.Item>
-              </Menu>
-            ))}
-        </div> */}
+        <div className="mobileCat">
+          <div className="scrollmenu" style={{ display: "flex" }}>
+            {
+              category.map((item) => (
+                <div className="menu__wrapper">
+                  <Menu
+                    onClick={() => { showCat(item.id); showCatName(item.name); }}
+                    style={{ float: "right", cursor: "pointer" }}
+                  >
+                    {item.name}
+                  </Menu>
+                </div>
+              ))}
+          </div>
+        </div>
+
+
         <div className="body">
           <div className="sidebar">
             <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>

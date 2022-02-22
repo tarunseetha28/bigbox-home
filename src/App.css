@@ -310,9 +310,14 @@ a{
     .home-body{
         padding-left:0px;
     }
-   
+    .mobileCat{
+        display:block !important;
+    }
 }
 
+.mobileCat{
+    display:none;
+}
 
 @media (max-width:680px){
     .head1{
@@ -376,4 +381,20 @@ a{
         width: 65px;
     }
 }
-
+div.scrollmenu {
+    padding-left:0px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  /* div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-left: 14px;
+    text-decoration: none;
+  } */
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
