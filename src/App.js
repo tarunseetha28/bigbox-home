@@ -19,7 +19,7 @@ import social3 from './assets/social3.svg';
 import social4 from './assets/social4.svg';
 import social5 from './assets/social5.svg';
 import hamburgermenu from './assets/hamburgermenu.svg';
-import { Button, List } from 'antd';
+import { Button, List, Drawer, Menu, SubMenu } from 'antd';
 
 
 const App = () => {
@@ -54,7 +54,6 @@ const App = () => {
   }
 
 
-
   useEffect(() => {
     fetchData()
   }, [selectedCatID])
@@ -71,6 +70,8 @@ const App = () => {
   }
   const [createStore, setcreateStore] = useState(createstore)
   const [getTheApp, setgetTheApp] = useState(gettheapp)
+
+
   return (
     <div className="App">
 
@@ -127,7 +128,14 @@ const App = () => {
           </button>
         </div>
 
-
+        {/* <div>
+          {
+            category.map((item) => (
+              <Menu onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer" }}>
+                <Menu.Item >{item.name}</Menu.Item>
+              </Menu>
+            ))}
+        </div> */}
         <div className="body">
           <div className="sidebar">
             <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>
@@ -141,7 +149,6 @@ const App = () => {
                 </List>
               ))
             }
-
           </div>
 
 
