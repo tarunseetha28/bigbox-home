@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
-import appstore from './assets/astore.png'
-import placeholderStore from './assets/placeholder-store.png'
-import gplay from './assets/gplay.png'
-import closeicon from './assets/closeicon.svg'
+import appstore from './assets/astore.png';
+import placeholderStore from './assets/placeholder-store.png';
+import gplay from './assets/gplay.png';
+import closeicon from './assets/closeicon.svg';
 import videostore from './assets/videostore.svg'
-import bigboxlogo from './assets/bigboxlogo.svg'
-import createstore from './assets/createstore.svg'
-import hovercreatestore from './assets/hovercreatestore.svg'
-import gettheapp from './assets/gettheapp.svg'
-import nostore from './assets/nostore.svg'
-import hovergettheapp from './assets/hovergettheapp.svg'
-import social1 from './assets/social1.svg'
-import social2 from './assets/social2.svg'
-import social3 from './assets/social3.svg'
-import social4 from './assets/social4.svg'
-import social5 from './assets/social5.svg'
+import bigboxlogo from './assets/bigboxlogo.svg';
+import createstore from './assets/createstore.svg';
+import hovercreatestore from './assets/hovercreatestore.svg';
+import gettheapp from './assets/gettheapp.svg';
+import nostore from './assets/nostore.svg';
+import hovergettheapp from './assets/hovergettheapp.svg';
+import social1 from './assets/social1.svg';
+import social2 from './assets/social2.svg';
+import social3 from './assets/social3.svg';
+import social4 from './assets/social4.svg';
+import social5 from './assets/social5.svg';
+import hamburgermenu from './assets/hamburgermenu.svg';
 import { Button, List } from 'antd';
 
 
@@ -76,37 +77,51 @@ const App = () => {
 
       <div className="header">
         <div className="header-left">
-          <a href="https://bigbox.online/"><img src={bigboxlogo} alt="" style={{ marginRight: "40px" }} /></a>
-          <p>shop</p>
-          <p>what is bigbox?</p>
-          <p>bigbox app</p>
-          <p>for business</p>
-          <p>help</p>
+          <div>
+            <a href="https://bigbox.online/"><img src={bigboxlogo} alt="" /></a>
+          </div>
+          <div className="header-left-menu">
+            <ul>shop</ul>
+            <ul>what is bigbox?</ul>
+            <ul>bigbox app</ul>
+            <ul>for business</ul>
+            <ul>help</ul>
+          </div>
         </div>
         <div className="header-right">
           <a href="http://onelink.to/pbfgv8"><img src={getTheApp} alt="" className="header-btn" onMouseOver={() => setgetTheApp(hovergettheapp)} onMouseOut={() => setgetTheApp(gettheapp)} /></a>
           <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K"><img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} /></a>
+        </div>
+        <div className="hamburger-menu">
+          <img src={hamburgermenu} alt="" />
         </div>
       </div>
 
 
       <div className="body-margins">
         <div >
-          <h1 style={{ fontSize: "80px", marginBottom: "15px" }}>video call your favourite brands.</h1>
-          <h5 style={{ fontSize: "28px", marginTop: "0", marginBottom: "15px", fontWeight: 400 }}>discover, follow and shop from your favourite stores. anytime. anywhere.</h5>
+          <h1 className="head1" >video call your favourite brands.</h1>
+          <h5 className="head2"  >discover, follow and shop from your favourite stores. anytime. anywhere.</h5>
         </div>
         <div id="ad1" className="promo">
-          <p>get the shopping experience you deserve with our new and improved bigbox app</p>
-          <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804"><img src={appstore} alt="" className="promo-img" /></a>
-          <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox"><img src={gplay} alt="" className="promo-img" /></a>
+          <div className="promo-app">
+            <p >get the shopping experience you deserve with our new and improved bigbox app</p>
+            <div className="promo-app-btn">
+              <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804"><img src={appstore} alt="" className="promo-img" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox"><img src={gplay} alt="" className="promo-img" /></a>
+            </div>
+          </div>
           <button className="button" onClick={removeDiv1}>
             <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
           </button>
+
         </div>
 
         <div id="ad2" className="promo">
-          <p>selling online? setup your video store with bigbox and sell easily through video calls</p>
-          <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K?typeform-source=localhost"><img src={videostore} alt="" className="promo-img" /></a>
+          <div className="promo-createstore">
+            <p >selling online? setup your video store with bigbox and sell easily through video calls</p>
+            <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K?typeform-source=localhost"><img src={videostore} alt="" className="promo-img" /></a>
+          </div>
           <button className="button" onClick={removeDiv2}>
             <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
           </button>
@@ -157,8 +172,10 @@ const App = () => {
                         <a style={{ textDecoration: 'none' }} href={`https://in.bigbox.online/${item.slug}`} target="_blank" >
                           <img src={item.brand_logo_url} alt="" className="brand-logo" />
                           <img className="home-storeImg" src={item.cover_pic_mobile_url || placeholderStore} alt="" />
-                          <h1>{item.brand.name}</h1>
-                          <span>{item.name}, {item.city}</span>
+                          <div className="home-store-body">
+                            <h1>{item.brand.name}</h1>
+                            <span>{item.name}, {item.city}</span>
+                          </div>
                         </a>
                       </div>
 
