@@ -128,7 +128,7 @@ const App = () => {
           </button>
         </div>
 
-        <div className="mobileCat">
+        <div className="mobile-cat">
           <div className="scrollmenu" style={{ display: "flex" }}>
             {
               category.map((item) => (

@@ -310,12 +310,12 @@ a{
     .home-body{
         padding-left:0px;
     }
-    .mobileCat{
+    .mobile-cat{
         display:block !important;
     }
 }
 
-.mobileCat{
+.mobile-cat{
     display:none;
 }
 
