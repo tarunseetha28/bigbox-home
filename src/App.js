@@ -133,12 +133,12 @@ const App = () => {
             {
               category.map((item) => (
                 <div className="menu__wrapper">
-                  <Menu
+                  <menu
                     onClick={() => { showCat(item.id); showCatName(item.name); }}
-                    style={{ float: "right", cursor: "pointer" }}
+                    style={{ float: "right", cursor: "pointer", paddingLeft: "0px", paddingRight: "20px" }}
                   >
                     {item.name}
-                  </Menu>
+                  </menu>
                 </div>
               ))}
           </div>
@@ -237,7 +237,7 @@ const App = () => {
         </div>
       </div>
 
-    </div>
+    </div >
   );
 }
 
