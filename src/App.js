@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
+
 import axios from "axios";
 import appstore from './assets/astore.png';
 import placeholderStore from './assets/placeholder-store.png';
@@ -24,6 +25,7 @@ import dgplay from './assets/dgplay.svg';
 import fstore from './assets/fstore.svg';
 import textlogo from './assets/textlogo.svg';
 import { Button, List, Drawer, Menu, SubMenu } from 'antd';
+import Hamburger from "./components/Hamburger";
 
 
 const App = () => {
@@ -98,7 +100,8 @@ const App = () => {
           <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K"><img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} /></a>
         </div>
         <div className="hamburger-menu">
-          <img src={hamburgermenu} alt="" />
+
+          <Hamburger />
         </div>
       </div>
 
