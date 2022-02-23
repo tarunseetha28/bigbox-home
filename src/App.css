@@ -435,7 +435,7 @@ div.scrollmenu {
     background-color: #777;
   }
 
- .menu__wrapper{
+ .mobile-cat-menu{
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;

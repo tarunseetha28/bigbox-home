@@ -135,7 +135,8 @@ const App = () => {
                 <div className="menu__wrapper">
                   <menu
                     onClick={() => { showCat(item.id); showCatName(item.name); }}
-                    style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
+                    className="mobile-cat-menu"
+                  // style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
                   >
                     {item.name}
                   </menu>
