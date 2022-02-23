@@ -6,8 +6,8 @@
 
 
 .body-margins{
-    margin-left:30px;
-    margin-right:30px;
+    margin-left:3%;
+    margin-right:3%;
 }
 
 a{
@@ -109,7 +109,7 @@ a{
     margin-left:20px;
     margin-top:20px;
     position:absolute;
-    z-index:999;
+    z-index:100;
 }
 
 .one {
@@ -166,11 +166,18 @@ a{
 }
 
 .header{
-    display:flex;
-    margin-left:30px;
-    margin-right:30px;
-    margin-top:20px;
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 10px;
+    padding-bottom: 5px;
     justify-content: space-between;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 999;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header-left{
@@ -203,7 +210,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding:80px 80px;
+    padding:4%;
     flex-wrap: wrap;
 }
 
@@ -226,7 +233,7 @@ a{
 
 .footer-left-follow{
     display:flex;
-    margin-top:40px;
+    margin-bottom:40px;
     column-gap:25px;
 }
 
@@ -355,17 +362,46 @@ a{
         font-weight: 400;
     }
     .home-storeImg{
-        width:150px !important;
-        height:150px !important;
+        width:160px !important;
+        height:160px !important;
     }
     .home-store-body{
-        width:150px !important;
+        width:160px !important;
     }
     .brand-logo{
         width: 45px !important;
     }
     .footer{
         padding:50px 50px !important;
+    }
+}
+
+@media (max-width:360px){
+    .head1{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .head2{
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+    .home-storeImg{
+        width:120px !important;
+        height:120px !important;
+    }
+    .home-store-body{
+        width:120px !important;
+    }
+    .brand-logo{
+        width: 45px !important;
+    }
+    .footer{
+        padding:20px 20px !important;
+    }
+    .promo-img{
+        height: 25px !important;
     }
 }
 
@@ -399,4 +435,20 @@ div.scrollmenu {
     background-color: #777;
   }
 
- 
+ .menu__wrapper{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: "Klarna Text";
+    font-weight: 500;
+    color: rgb(14, 14, 15);
+    line-height: 105%;
+    width: auto;
+    background: rgb(240, 241, 241);
+    margin-right: 5px;
+ }

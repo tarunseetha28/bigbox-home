@@ -135,7 +135,7 @@ const App = () => {
                 <div className="menu__wrapper">
                   <menu
                     onClick={() => { showCat(item.id); showCatName(item.name); }}
-                    style={{ float: "right", cursor: "pointer", paddingLeft: "0px", paddingRight: "20px" }}
+                    style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
                   >
                     {item.name}
                   </menu>
@@ -210,6 +210,13 @@ const App = () => {
 
       <div className="footer">
         <div className="footer-left">
+          <div className="footer-left-follow">
+            <img src={social1} alt="" />
+            <img src={social5} alt="" />
+            <img src={social4} alt="" />
+            <img src={social3} alt="" />
+            <img src={social2} alt="" />
+          </div>
           <p>blog</p>
           <p>about</p>
           <p>careers</p>
@@ -219,15 +226,8 @@ const App = () => {
           <p>user privacy policy</p>
           <p>return & refund policy</p>
           <p>terms and conditions</p>
-          <div className="footer-left-follow">
-            <img src={social1} alt="" />
-            <img src={social5} alt="" />
-            <img src={social4} alt="" />
-            <img src={social3} alt="" />
-            <img src={social2} alt="" />
-          </div>
-          <span>copyrights © 2021 <br />
-            bigbox retailtech solutions llp</span>
+
+          <span>copyrights © 2021</span>
         </div>
         <div className="footer-right">
           <span className="footer-right-span1">bigbox is a videoshopping platform that enables shoppers to discover, follow <br /> and enjoy personalised shopping experience with stores through video calls
