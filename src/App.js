@@ -133,6 +133,7 @@ const App = () => {
         </div>
 
         <div className="mobile-cat">
+          <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)" }}>categories</p>
           <div className="scrollmenu" style={{ display: "flex" }}>
             {
               category.map((item) => (
@@ -253,7 +254,7 @@ const App = () => {
         <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1>
         <span style={{ color: "#7E7E7E" }}>copyrights © 2021</span>
       </div>
-    </div>
+    </div >
 
   );
 }
