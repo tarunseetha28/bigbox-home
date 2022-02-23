@@ -36,7 +36,7 @@ const Hamburger = () => {
                     <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804">
                         <img src={appstore} style={{ height: "40px" }} />
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.bigbox.bigbox">
+                    <a href="">
                         <img src={gplay} style={{ height: "40px" }} />
                     </a>
                 </div>

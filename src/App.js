@@ -99,8 +99,15 @@ const App = () => {
           <a href="http://onelink.to/pbfgv8"><img src={getTheApp} alt="" className="header-btn" onMouseOver={() => setgetTheApp(hovergettheapp)} onMouseOut={() => setgetTheApp(gettheapp)} /></a>
           <a href="https://ctl0pmnn3o6.typeform.com/to/DLdFmW5K"><img src={createStore} alt="" className="header-btn" onMouseOver={() => setcreateStore(hovercreatestore)} onMouseOut={() => setcreateStore(createstore)} /></a>
         </div>
-        <div className="hamburger-menu">
-
+        <div className="hamburger-menu" >
+          <a href="http://onelink.to/pbfgv8">
+            <img
+              style={{ height: "35px" }}
+              src={getTheApp}
+              className="header-btn"
+              onMouseOver={() => setgetTheApp(hovergettheapp)}
+              onMouseOut={() => setgetTheApp(gettheapp)} />
+          </a>
           <Hamburger />
         </div>
       </div>
