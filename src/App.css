@@ -214,6 +214,7 @@ a{
     flex-wrap: wrap;
 }
 
+
 .footer-left{
     margin-top: 20px;
     display: flex;
@@ -262,6 +263,14 @@ a{
 .footer-right-span2{
     margin-top:50px;
     font-size:20px
+}
+
+.footer-cpr{
+    padding-left:4%;
+    padding-right:4%;
+    padding-top: 0px;
+    padding-bottom: 4%;
+    background-color: black;
 }
 
 .ant-list:hover {
@@ -386,11 +395,9 @@ a{
     .brand-logo{
         width: 45px !important;
     }
-    .footer{
-        padding:50px 50px !important;
-    }
+    
     .footer-right-btn img{
-        height:20px !important;
+        height:24px !important;
     } 
 }
 
@@ -415,12 +422,13 @@ a{
     .brand-logo{
         width: 45px !important;
     }
-    .footer{
-        padding:20px 20px !important;
-    }
+    
     .promo-img{
         height: 25px !important;
     }
+    .footer-right-btn img{
+        height:18px !important;
+    } 
 }
 
 @media (max-width:980px){

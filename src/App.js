@@ -213,6 +213,7 @@ const App = () => {
         </div>
       </div>
 
+
       <div className="footer">
         <div className="footer-left">
           <div className="footer-left-follow">
@@ -232,8 +233,8 @@ const App = () => {
           <p>return & refund policy</p>
           <p>terms and conditions</p>
 
-          <h1 style={{ marginTop: "50px", marginBottom: "0px", fontSize: "45px", fontWeight: 500 }}>bigbox</h1>
-          <span>copyrights © 2021</span>
+          {/* <h1 style={{ marginTop: "50px", marginBottom: "0px", fontSize: "45px", fontWeight: 500 }}>bigbox</h1>
+          <span>copyrights © 2021</span> */}
 
         </div>
         <div className="footer-right">
@@ -248,8 +249,12 @@ const App = () => {
           <img src={fstore} alt="" />
         </div>
       </div>
+      <div className="footer-cpr">
+        <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1>
+        <span style={{ color: "#7E7E7E" }}>copyrights © 2021</span>
+      </div>
+    </div>
 
-    </div >
   );
 }
 
