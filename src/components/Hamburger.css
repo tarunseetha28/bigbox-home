@@ -1,0 +1,13 @@
+.hamBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ant-drawer-header-title{
+    flex-direction: row-reverse !important;
+}
+
+.ant-drawer-title{
+    font-weight: bold;
+}
