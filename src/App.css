@@ -413,11 +413,11 @@ a{
         font-weight: 400;
     }
     .home-storeImg{
-        width:120px !important;
-        height:120px !important;
+        width:145px !important;
+        height:145px !important;
     }
     .home-store-body{
-        width:120px !important;
+        width:145px !important;
     }
     .brand-logo{
         width: 45px !important;
@@ -429,6 +429,16 @@ a{
     .footer-right-btn img{
         height:18px !important;
     } 
+}
+
+@media (max-width:310px){
+    .home-storeImg{
+        width:120px !important;
+        height:120px !important;
+    }
+    .home-store-body{
+        width:120px !important;
+    }
 }
 
 @media (max-width:980px){
