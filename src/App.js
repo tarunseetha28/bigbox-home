@@ -19,6 +19,10 @@ import social3 from './assets/social3.svg';
 import social4 from './assets/social4.svg';
 import social5 from './assets/social5.svg';
 import hamburgermenu from './assets/hamburgermenu.svg';
+import dastore from './assets/dastore.svg';
+import dgplay from './assets/dgplay.svg';
+import fstore from './assets/fstore.svg';
+import textlogo from './assets/textlogo.svg';
 import { Button, List, Drawer, Menu, SubMenu } from 'antd';
 
 
@@ -228,13 +232,20 @@ const App = () => {
           <p>return & refund policy</p>
           <p>terms and conditions</p>
 
+          <h1 style={{ marginTop: "50px", marginBottom: "0px", fontSize: "45px", fontWeight: 500 }}>bigbox</h1>
           <span>copyrights © 2021</span>
+
         </div>
         <div className="footer-right">
           <span className="footer-right-span1">bigbox is a videoshopping platform that enables shoppers to discover, follow <br /> and enjoy personalised shopping experience with stores through video calls
           </span>
           <span className="footer-right-span2">imagine a technology that enables users to shop virtually from<br /> any store in the world through a videocall, experiencing the <br />product live and without compromising the shopping <br /> experience!
             <br /><br />thats what bigbox is all about…<br /><br />we love hearing from our shoppers,<br />say hi to us at <span style={{ color: "#C9052C" }}> hello@bigbox.online</span></span>
+        </div>
+        <div className="footer-right-btn">
+          <img src={dastore} alt="" />
+          <img src={dgplay} alt="" />
+          <img src={fstore} alt="" />
         </div>
       </div>
 
