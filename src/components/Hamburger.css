@@ -11,3 +11,18 @@
 .ant-drawer-title{
     font-weight: bold;
 }
+
+.ant-drawer-close{
+    margin-right:0px;
+    padding-right:0px;
+}
+
+.ant-drawer-content-wrapper{
+    width:340px !important;
+}
+
+@media (max-width:340px){
+    .ant-drawer-content-wrapper{
+        width:280px !important;
+    }
+}

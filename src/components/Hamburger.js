@@ -27,11 +27,11 @@ const Hamburger = () => {
             >
             </Button>
             <Drawer title="menu" placement="right" onClose={onClose} visible={visible}>
-                <p>shop</p>
-                <p>what is bigbox?</p>
-                <p>bigbox app</p>
-                <p>for business</p>
-                <p>help</p>
+                <a href=""><p>shop</p></a>
+                <a href=""><p>what is bigbox?</p></a>
+                <a href=""><p>bigbox app</p></a>
+                <a href=""><p>for business</p></a>
+                <a href=""><p>help</p></a>
                 <div style={{ display: "flex", justifyContent: "space-around" }}>
                     <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804">
                         <img src={appstore} style={{ height: "40px" }} />

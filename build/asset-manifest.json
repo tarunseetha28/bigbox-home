@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bigbox-home/static/css/main.efedeb25.css",
-    "main.js": "/bigbox-home/static/js/main.239a1d21.js",
+    "main.css": "/bigbox-home/static/css/main.39aeb7b9.css",
+    "main.js": "/bigbox-home/static/js/main.11cc1068.js",
     "static/js/787.ce051a7f.chunk.js": "/bigbox-home/static/js/787.ce051a7f.chunk.js",
     "static/media/nostore.svg": "/bigbox-home/static/media/nostore.9bb4a3175564cda36b69286e7ca5d2d6.svg",
     "static/media/dgplay.svg": "/bigbox-home/static/media/dgplay.7c44281140a4a21f5487141493e91a21.svg",
@@ -23,12 +23,12 @@
     "static/media/fstore.svg": "/bigbox-home/static/media/fstore.4bc41834273b6f5945e08150f782ff80.svg",
     "static/media/social1.svg": "/bigbox-home/static/media/social1.9ac21481023548daaa519c9e0507e68f.svg",
     "static/media/hamburgermenu.svg": "/bigbox-home/static/media/hamburgermenu.06d75fb33a00460361f1f2cf47c4f7e7.svg",
-    "main.efedeb25.css.map": "/bigbox-home/static/css/main.efedeb25.css.map",
-    "main.239a1d21.js.map": "/bigbox-home/static/js/main.239a1d21.js.map",
+    "main.39aeb7b9.css.map": "/bigbox-home/static/css/main.39aeb7b9.css.map",
+    "main.11cc1068.js.map": "/bigbox-home/static/js/main.11cc1068.js.map",
     "787.ce051a7f.chunk.js.map": "/bigbox-home/static/js/787.ce051a7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efedeb25.css",
-    "static/js/main.239a1d21.js"
+    "static/css/main.39aeb7b9.css",
+    "static/js/main.11cc1068.js"
   ]
 }
