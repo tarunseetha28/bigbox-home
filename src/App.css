@@ -77,16 +77,16 @@ a{
     width:100%;
 }
 .home-body1{
-    padding: 20px 0px 0 50px;
+    /* padding: 20px 0px 0 50px; */
     display:flex;
     flex-wrap: wrap;
     column-gap: 30px; 
     row-gap:20px;
     align-content:flex-start;
-    width: 95%;
+    width: 100%;
 }
 .home-body-nostore-body{
-    width:92%
+    width:100%
 }
 
 .home-body-nostore >img{
@@ -422,6 +422,12 @@ a{
     .footer-right-btn img{
         height:24px !important;
     } 
+    .home-body-nostore >img{
+        width:250px;
+    }
+    .home-body-nostore >p{
+        font-size:14px;
+    }
 }
 
 @media (max-width:360px){
