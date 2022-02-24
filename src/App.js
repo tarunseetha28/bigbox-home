@@ -143,7 +143,14 @@ const App = () => {
         </div>
 
         <div className="mobile-cat">
-          <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)" }}>categories</p>
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+            <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)" }}>categories</p>
+            <Button
+              style={{ fontSize: "18px", fontWeight: "700", height: "20px", marginTop: "auto", border: "none", backgroundColor: "transparent" }}
+            >
+              see all
+            </Button>
+          </div>
           <div className="scrollmenu" style={{ display: "flex" }}>
             {
               category.map((item) => (
