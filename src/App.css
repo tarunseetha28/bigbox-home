@@ -503,3 +503,7 @@ div.scrollmenu {
      background-color: black ;
      color: white;
  }
+
+ .mobile-cat-menu :active{
+    background-color: transparent ;
+ }
