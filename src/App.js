@@ -170,7 +170,9 @@ const App = () => {
                 // <option onClick={() => showCat(item.id)} style={{ cursor: "pointer" }}>
                 //   {item.name}
                 // </option>
-                <List onClick={() => { showCat(item.id); showCatName(item.name); }} style={{ cursor: "pointer", padding: "5px" }}>
+                <List onClick={() => { showCat(item.id); showCatName(item.name); }}
+                  className="cat-list"
+                >
                   {item.name}
                 </List>
               ))

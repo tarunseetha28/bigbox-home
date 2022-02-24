@@ -520,10 +520,16 @@ div.scrollmenu {
  }
 
  .menu__wrapper :active{
-     background-color: black ;
+     background-color: black;
      color: white;
  }
 
  .mobile-cat-menu :active{
     background-color: transparent ;
+ }
+
+ .cat-list{
+    cursor: pointer;
+    padding: 8px 13px;
+    margin-left: -10px;
  }
