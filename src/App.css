@@ -514,7 +514,10 @@ div.scrollmenu {
     margin-right: 5px;   
     cursor: pointer;
  }
-
+.mobile-cat-menu-all{
+    padding-left:5px;
+    cursor: pointer;
+}
  .ant-drawer-close{
      margin-right:0px;
  }
@@ -532,4 +535,19 @@ div.scrollmenu {
     cursor: pointer;
     padding: 8px 13px;
     margin-left: -10px;
+ }
+
+ .seeall-btn{
+    font-size: 18px;
+    height: 20px;
+    margin-top: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+ }
+
+ .mobile-cat-item{
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
  }

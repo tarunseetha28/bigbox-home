@@ -78,6 +78,24 @@ const App = () => {
   const [getTheApp, setgetTheApp] = useState(gettheapp)
 
 
+
+  const [visible, setVisible] = useState(false);
+
+  const showDrawer = () => {
+    setVisible(true);
+  };
+
+  const onClose = () => {
+    setVisible(false);
+  };
+
+
+
+
+
+
+
+
   return (
     <div className="App">
 
@@ -143,13 +161,28 @@ const App = () => {
         </div>
 
         <div className="mobile-cat">
-          <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+          <div className="mobile-cat-item">
             <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)" }}>categories</p>
             <Button
-              style={{ fontSize: "18px", fontWeight: "700", height: "20px", marginTop: "auto", border: "none", backgroundColor: "transparent" }}
+              onClick={showDrawer}
+              className="seeall-btn"
+
             >
               see all
             </Button>
+            <Drawer title="categories" placement="right" onClose={onClose} visible={visible}>
+              {
+                category.map((item) => (
+                  <div className="">
+                    <menu
+                      onClick={() => { showCat(item.id); showCatName(item.name); }}
+                      className="mobile-cat-menu-all"
+                    >
+                      {item.name}
+                    </menu>
+                  </div>
+                ))}
+            </Drawer>
           </div>
           <div className="scrollmenu" style={{ display: "flex" }}>
             {
