@@ -260,7 +260,7 @@ const App = () => {
           <span className="footer-right-span1">bigbox is a videoshopping platform that enables shoppers to discover, follow <br /> and enjoy personalised shopping experience with stores through video calls
           </span>
           <span className="footer-right-span2">imagine a technology that enables users to shop virtually from<br /> any store in the world through a videocall, experiencing the <br />product live and without compromising the shopping <br /> experience!
-            <br /><br />thats what bigbox is all about…<br /><br />we love hearing from our shoppers,<br />say hi to us at <span style={{ color: "#C9052C" }}> hello@bigbox.online</span></span>
+            <br /><br />thats what bigbox is all about…<br /><br />we love hearing from our shoppers,<br />say hi to us at <a href="mailto:hello@bigbox.online"><span style={{ color: "#C9052C" }}> hello@bigbox.online</span></a></span>
         </div>
         <div className="footer-right-btn">
           <img src={dastore} alt="" />
