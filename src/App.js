@@ -23,7 +23,7 @@ import hamburgermenu from './assets/hamburgermenu.svg';
 import dastore from './assets/dastore.svg';
 import dgplay from './assets/dgplay.svg';
 import fstore from './assets/fstore.svg';
-import textlogo from './assets/textlogo.svg';
+import textlogo from './assets/textlogo.png';
 import { Button, List, Drawer, Menu, SubMenu } from 'antd';
 import Hamburger from "./components/Hamburger";
 
@@ -266,7 +266,8 @@ const App = () => {
         </div>
       </div>
       <div className="footer-cpr">
-        <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1>
+        <img src={textlogo} style={{ width: "130px" }} />
+        {/* <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1> */}
         <span style={{ color: "#7E7E7E" }}>copyrights © 2021</span>
       </div>
     </div >
