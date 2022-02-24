@@ -149,6 +149,7 @@ const App = () => {
               category.map((item) => (
                 <div className="menu__wrapper">
                   <menu
+
                     onClick={() => { showCat(item.id); showCatName(item.name); }}
                     className="mobile-cat-menu"
                   // style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
