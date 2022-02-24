@@ -553,6 +553,7 @@ div.scrollmenu {
      justify-content: space-between;
  }
 
+
  .seeall-cat-mob .ant-drawer-content-wrapper{
 
     top: 40%;
@@ -560,6 +561,6 @@ div.scrollmenu {
     bottom: 0px;
     width: 520px;
     height: auto;
-    max-height: 90%;
+    max-height: 60%;
     transform: translateX(-50%);
  }
