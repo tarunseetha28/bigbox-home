@@ -166,7 +166,6 @@ const App = () => {
             <Button
               onClick={showDrawer}
               className="seeall-btn"
-
             >
               see all
             </Button>
