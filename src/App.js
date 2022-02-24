@@ -172,7 +172,7 @@ const App = () => {
             <Drawer className="seeall-cat-mob" title="all categories" placement="right" onClose={onClose} visible={visible}>
               {
                 category.map((item) => (
-                  <div className="">
+                  <div className="" onClick={onClose}>
                     <menu
                       onClick={() => { showCat(item.id); showCatName(item.name); }}
                       className="mobile-cat-menu-all"
