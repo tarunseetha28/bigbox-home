@@ -498,3 +498,8 @@ div.scrollmenu {
  .ant-drawer-close{
      margin-right:0px;
  }
+
+ .menu__wrapper :active{
+     background-color: black ;
+     color: white;
+ }
