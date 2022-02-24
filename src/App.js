@@ -227,6 +227,11 @@ const App = () => {
 
       <div className="footer">
         <div className="footer-left">
+          <div className="footer-right-btn-mobile">
+            <img src={dastore} alt="" />
+            <img src={dgplay} alt="" />
+            <img src={fstore} alt="" />
+          </div>
           <div className="footer-left-follow">
             <img src={social1} alt="" />
             <img src={social5} alt="" />
