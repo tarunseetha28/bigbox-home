@@ -552,3 +552,14 @@ div.scrollmenu {
      flex-direction: row;
      justify-content: space-between;
  }
+
+ .seeall-cat-mob .ant-drawer-content-wrapper{
+
+    top: 40%;
+    left: 50%;
+    bottom: 0px;
+    width: 520px;
+    height: auto;
+    max-height: 90%;
+    transform: translateX(-50%);
+ }

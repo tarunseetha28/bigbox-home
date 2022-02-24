@@ -169,7 +169,7 @@ const App = () => {
             >
               see all
             </Button>
-            <Drawer title="categories" placement="right" onClose={onClose} visible={visible}>
+            <Drawer className="seeall-cat-mob" title="all categories" placement="right" onClose={onClose} visible={visible}>
               {
                 category.map((item) => (
                   <div className="">
