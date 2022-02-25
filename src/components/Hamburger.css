@@ -18,11 +18,23 @@
 }
 
 .ant-drawer-content-wrapper{
-    width:340px !important;
+    width:100% !important;
 }
 
 @media (max-width:340px){
     .ant-drawer-content-wrapper{
         width:280px !important;
     }
+}
+
+.hammenu-items{
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(2, 14, 15, 0.06);
+    font-size:16px;
+    font-weight:700;
+}
+
+.drawer-hamburger .ant-drawer-body{
+    padding-top:0px;
 }
