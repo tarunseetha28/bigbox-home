@@ -165,41 +165,24 @@ const App = () => {
             <img src={closeicon} alt="" style={{ cursor: "pointer" }} />
           </button>
         </div>
-
-        <div className="mobile-cat">
-          <div className="mobile-cat-item">
-            <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)" }}>categories</p>
-            <Button
-              onClick={showDrawer}
-              className="seeall-btn"
-            >
-              see all
-            </Button>
-            <Drawer className="seeall-cat-mob" title="all categories" placement="right" onClose={onClose} visible={visible}>
-              {
-                category.map((item) => (
-                  <div className="" onClick={onClose}>
-                    <menu
-                      onClick={() => { showCat(item.id); showCatName(item.name); }}
-                      className="mobile-cat-menu-all"
-                    >
-
-                      {item.name}
-
-                    </menu>
-                  </div>
-                ))}
-            </Drawer>
-          </div>
-          <div className="scrollmenu" style={{ display: "flex" }}>
+      </div>
+      <div className="mobile-cat">
+        <div className="mobile-cat-item">
+          <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)", marginLeft: "3%" }}>categories</p>
+          <Button
+            onClick={showDrawer}
+            className="seeall-btn"
+            style={{ marginRight: "3%" }}
+          >
+            see all
+          </Button>
+          <Drawer className="seeall-cat-mob" title="all categories" placement="right" onClose={onClose} visible={visible}>
             {
               category.map((item) => (
-                <div className="menu__wrapper">
+                <div className="" onClick={onClose}>
                   <menu
-
                     onClick={() => { showCat(item.id); showCatName(item.name); }}
-                    className="mobile-cat-menu"
-                  // style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
+                    className="mobile-cat-menu-all"
                   >
 
                     {item.name}
@@ -207,10 +190,28 @@ const App = () => {
                   </menu>
                 </div>
               ))}
-          </div>
+          </Drawer>
         </div>
+        <div className="scrollmenu" style={{ display: "flex" }}>
+          {
+            category.map((item) => (
+              <div className="menu__wrapper">
+                <menu
 
+                  onClick={() => { showCat(item.id); showCatName(item.name); }}
+                  className="mobile-cat-menu"
+                // style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
+                >
 
+                  {item.name}
+
+                </menu>
+              </div>
+            ))}
+        </div>
+      </div>
+
+      <div className="body-margins">
         <div className="body">
           <div className="sidebar">
             <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>
@@ -277,8 +278,8 @@ const App = () => {
             }
           </div>
         </div>
-      </div>
 
+      </div>
 
       <div className="footer">
         <div className="footer-left">
