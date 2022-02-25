@@ -572,3 +572,7 @@ div.scrollmenu {
     max-height: 70%;
     transform: translateX(-50%);
  }
+
+.seeall-cat-mob .ant-drawer-body{
+    padding-top:5px;
+}
