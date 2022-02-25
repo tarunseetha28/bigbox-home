@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bigbox-home/static/css/main.aa503d26.css",
-    "main.js": "/bigbox-home/static/js/main.3490ad5b.js",
+    "main.js": "/bigbox-home/static/js/main.644c1f5b.js",
     "static/js/787.ce051a7f.chunk.js": "/bigbox-home/static/js/787.ce051a7f.chunk.js",
     "static/media/nostore.svg": "/bigbox-home/static/media/nostore.9bb4a3175564cda36b69286e7ca5d2d6.svg",
     "static/media/textlogo.png": "/bigbox-home/static/media/textlogo.b8d4a4e201edb058c4f2.png",
@@ -25,11 +25,11 @@
     "static/media/social1.svg": "/bigbox-home/static/media/social1.9ac21481023548daaa519c9e0507e68f.svg",
     "static/media/hamburgermenu.svg": "/bigbox-home/static/media/hamburgermenu.06d75fb33a00460361f1f2cf47c4f7e7.svg",
     "main.aa503d26.css.map": "/bigbox-home/static/css/main.aa503d26.css.map",
-    "main.3490ad5b.js.map": "/bigbox-home/static/js/main.3490ad5b.js.map",
+    "main.644c1f5b.js.map": "/bigbox-home/static/js/main.644c1f5b.js.map",
     "787.ce051a7f.chunk.js.map": "/bigbox-home/static/js/787.ce051a7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa503d26.css",
-    "static/js/main.3490ad5b.js"
+    "static/js/main.644c1f5b.js"
   ]
 }
