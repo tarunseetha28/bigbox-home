@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bigbox-home/static/css/main.aa503d26.css",
-    "main.js": "/bigbox-home/static/js/main.644c1f5b.js",
+    "main.css": "/bigbox-home/static/css/main.0c274eb6.css",
+    "main.js": "/bigbox-home/static/js/main.1cea293d.js",
     "static/js/787.ce051a7f.chunk.js": "/bigbox-home/static/js/787.ce051a7f.chunk.js",
     "static/media/nostore.svg": "/bigbox-home/static/media/nostore.9bb4a3175564cda36b69286e7ca5d2d6.svg",
     "static/media/textlogo.png": "/bigbox-home/static/media/textlogo.b8d4a4e201edb058c4f2.png",
@@ -16,20 +16,20 @@
     "static/media/social5.svg": "/bigbox-home/static/media/social5.386a6392f637430804c1c813130563ad.svg",
     "static/media/hovercreatestore.svg": "/bigbox-home/static/media/hovercreatestore.19a7cd5e42145193f96100c2acaa3a4f.svg",
     "static/media/closeicon.svg": "/bigbox-home/static/media/closeicon.4e8642bffbe31f433d5aded23d5a6714.svg",
-    "index.html": "/bigbox-home/index.html",
     "static/media/createstore.svg": "/bigbox-home/static/media/createstore.7917d08611b00a081b6989d955751049.svg",
     "static/media/gettheapp.svg": "/bigbox-home/static/media/gettheapp.96514f5fa2a8d5571cdbc138d71d1a3b.svg",
     "static/media/hovergettheapp.svg": "/bigbox-home/static/media/hovergettheapp.a5ec703c825be478419a0e8ce887ef6d.svg",
     "static/media/social4.svg": "/bigbox-home/static/media/social4.9d2cf75b7ac32718ef52e51e017d7349.svg",
     "static/media/fstore.svg": "/bigbox-home/static/media/fstore.4bc41834273b6f5945e08150f782ff80.svg",
+    "index.html": "/bigbox-home/index.html",
     "static/media/social1.svg": "/bigbox-home/static/media/social1.9ac21481023548daaa519c9e0507e68f.svg",
     "static/media/hamburgermenu.svg": "/bigbox-home/static/media/hamburgermenu.06d75fb33a00460361f1f2cf47c4f7e7.svg",
-    "main.aa503d26.css.map": "/bigbox-home/static/css/main.aa503d26.css.map",
-    "main.644c1f5b.js.map": "/bigbox-home/static/js/main.644c1f5b.js.map",
+    "main.0c274eb6.css.map": "/bigbox-home/static/css/main.0c274eb6.css.map",
+    "main.1cea293d.js.map": "/bigbox-home/static/js/main.1cea293d.js.map",
     "787.ce051a7f.chunk.js.map": "/bigbox-home/static/js/787.ce051a7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa503d26.css",
-    "static/js/main.644c1f5b.js"
+    "static/css/main.0c274eb6.css",
+    "static/js/main.1cea293d.js"
   ]
 }
