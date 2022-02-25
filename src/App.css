@@ -367,6 +367,7 @@ a{
 }
 
 @media (max-width:680px){
+    
     .head1{
         font-size: 60px;
         margin-bottom: 15px;
@@ -394,6 +395,7 @@ a{
         margin-left:15px;
         margin-top:15px;
     }
+    
 }
 
 
@@ -428,6 +430,7 @@ a{
     .home-body-nostore >p{
         font-size:14px;
     }
+    
 }
 
 @media (max-width:360px){
@@ -561,12 +564,11 @@ div.scrollmenu {
 
 
  .seeall-cat-mob .ant-drawer-content-wrapper{
-
-    top: 40%;
+    top: 30%;
     left: 50%;
     bottom: 0px;
-    width: 520px;
+    width: 100% !important;
     height: auto;
-    max-height: 60%;
+    max-height: 70%;
     transform: translateX(-50%);
  }

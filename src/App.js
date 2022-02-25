@@ -220,7 +220,7 @@ const App = () => {
 
 
           <div className="centerbody">
-            <div>
+            <div style={{ width: "100%" }}>
               <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
             </div>
 
