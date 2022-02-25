@@ -387,6 +387,13 @@ a{
     .footer-right-btn-mobile img{
         height:30px !important;
     }   
+    .home-storeImg{
+        width:240px !important;
+        height:240px !important;
+    }
+    .home-store-body{
+        width:240px !important;
+    }
 }
 
 .mobile-cat{
