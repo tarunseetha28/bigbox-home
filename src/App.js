@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
-
+import WebFont from 'webfontloader';
 import axios from "axios";
 import appstore from './assets/astore.png';
 import placeholderStore from './assets/placeholder-store.png';
@@ -27,6 +27,11 @@ import textlogo from './assets/textlogo.png';
 import { Button, List, Drawer, Menu, SubMenu } from 'antd';
 import Hamburger from "./components/Hamburger";
 
+WebFont.load({
+  google: {
+    families: ['Product Sans', 'sans-serif']
+  }
+});
 
 const App = () => {
   const [category, setCategory] = useState([]);
