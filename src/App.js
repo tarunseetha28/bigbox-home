@@ -177,7 +177,9 @@ const App = () => {
                       onClick={() => { showCat(item.id); showCatName(item.name); }}
                       className="mobile-cat-menu-all"
                     >
+
                       {item.name}
+
                     </menu>
                   </div>
                 ))}
@@ -193,7 +195,9 @@ const App = () => {
                     className="mobile-cat-menu"
                   // style={{ float: "right", cursor: "pointer", paddingLeft: "0px", margin: "0px" }}
                   >
+
                     {item.name}
+
                   </menu>
                 </div>
               ))}
@@ -212,7 +216,10 @@ const App = () => {
                 <List onClick={() => { showCat(item.id); showCatName(item.name); }}
                   className="cat-list"
                 >
-                  {item.name}
+
+                  <div className={item.id == selectedCatID ? "highlight" : "not__highlight"}>
+                    {item.name}
+                  </div>
                 </List>
               ))
             }

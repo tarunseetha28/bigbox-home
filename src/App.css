@@ -89,6 +89,24 @@ a{
     width:100%
 }
 
+.highlight {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+
+ .highlight { 
+    padding: 8px 13px;
+    margin-left: -10px;
+}
+
+.not__highlight{
+    background: transparent;
+}
+
 .home-body-nostore >img{
     margin-left:auto;
     margin-right:auto;
@@ -279,12 +297,12 @@ a{
     background-color: black;
 }
 
-.ant-list:hover {
+/* .ant-list:hover {
     background-color: black;
     color:white;
     border-radius: 5px;
     width:80%;
-  }
+  } */
 
 .lengthStores{   
     font-weight: 600;
@@ -531,10 +549,10 @@ div.scrollmenu {
      margin-right:0px;
  }
 
- .menu__wrapper :active{
+ /* .menu__wrapper :active{
      background-color: black;
      color: white;
- }
+ } */
 
  .mobile-cat-menu :active{
     background-color: transparent ;
