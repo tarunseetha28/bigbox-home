@@ -235,7 +235,7 @@ const App = () => {
 
           <div className="centerbody">
             <div style={{ width: "100%" }}>
-              <p className="numberStores">{selectedCatName || 'grocery'} <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
+              <p className="numberStores"><span style={{ fontSize: "20px" }}>{selectedCatName || 'grocery'}</span> <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
             </div>
 
             {store.length === 0 ?
