@@ -64,18 +64,23 @@ a{
     padding-top:20px;
 }
 .home-body{
-    /* padding: 20px 0px 0 50px;
-    display:flex;
-    flex-wrap: wrap;
-    column-gap: 28px; 
-    row-gap:20px;
-    align-content:flex-start; */
-    padding: 20px 0px 0 0px;
+    /* padding: 20px 0px 0 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width:100%;
+    width:100%; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-gap: 1rem;
+    justify-content: space-between;
 }
+
+/* .home-body::after{
+    content:"";
+    flex:auto;
+  } */
+
 .home-body1{
     /* padding: 20px 0px 0 50px; */
     display:flex;
@@ -115,7 +120,7 @@ a{
 .centerbody{
     flex: 85% 1;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     column-gap: 20px;
     align-content: flex-start;
     flex-direction: column;
@@ -343,6 +348,10 @@ a{
     display:none;
 }
 @media (max-width:1130px) {
+
+    .home-body{
+        grid-template-columns: repeat(auto-fill, 240px);
+      }
     .footer-right-btn{
         display: none;
     }
@@ -385,6 +394,9 @@ a{
 }
 
 @media (max-width:680px){
+    .home-body{
+        grid-template-columns: repeat(auto-fill, 180px);
+      }
     
     .head1{
         font-size: 60px;
@@ -418,6 +430,9 @@ a{
 
 
 @media (max-width:480px){
+    .home-body{
+        grid-template-columns: repeat(auto-fill, 155px);
+      }
     .head1{
         font-size: 40px;
         margin-bottom: 15px;
@@ -429,11 +444,11 @@ a{
         font-weight: 400;
     }
     .home-storeImg{
-        width:170px !important;
-        height:170px !important;
+        width:155px !important;
+        height:155px !important;
     }
     .home-store-body{
-        width:170px !important;
+        width:155px !important;
     }
     .brand-logo{
         width: 45px !important;
@@ -452,6 +467,9 @@ a{
 }
 
 @media (max-width:360px){
+    .home-body{
+        grid-template-columns: repeat(auto-fill, 135px);
+      }
     .head1{
         font-size: 32px;
         margin-bottom: 15px;
@@ -463,11 +481,11 @@ a{
         font-weight: 400;
     }
     .home-storeImg{
-        width:145px !important;
-        height:145px !important;
+        width:135px !important;
+        height:135px !important;
     }
     .home-store-body{
-        width:145px !important;
+        width:135px !important;
     }
     .brand-logo{
         width: 45px !important;
@@ -485,6 +503,9 @@ a{
 }
 
 @media (max-width:310px){
+    .home-body{
+        grid-template-columns: repeat(auto-fill, 120px);
+      }
     .home-storeImg{
         width:120px !important;
         height:120px !important;
