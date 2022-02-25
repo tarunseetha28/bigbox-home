@@ -168,7 +168,7 @@ const App = () => {
       </div>
       <div className="mobile-cat">
         <div className="mobile-cat-item">
-          <p style={{ marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)", marginLeft: "3%" }}>categories</p>
+          <p style={{ fontWeight: 600, marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)", marginLeft: "3%" }}>categories</p>
           <Button
             onClick={showDrawer}
             className="seeall-btn"
