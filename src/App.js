@@ -136,6 +136,7 @@ const App = () => {
           <h1 className="head1" >video call your favourite brands.</h1>
           <h5 className="head2"  >discover, follow and shop from your favourite stores. anytime. anywhere.</h5>
         </div>
+
         <div id="ad1" className="promo">
           <div className="promo-app">
             <p >get the shopping experience you deserve with our new and improved bigbox app</p>

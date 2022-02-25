@@ -394,6 +394,28 @@ a{
     .home-store-body{
         width:240px !important;
     }
+    .promo-app{
+        flex-direction: column;
+    }
+    .promo-createstore{
+        flex-direction: column;
+    }
+    .promo-img{
+        margin-left:0px;
+        margin-right:10px;
+    }
+    .button{
+        padding-top:10px;
+        margin-bottom: auto;
+        margin-right: 5px;
+    }
+    .promo-app p{
+        margin-top:2px;
+    }
+    
+    .promo-createstore p{
+        margin-top:2px;
+    }
 }
 
 .mobile-cat{
@@ -621,4 +643,14 @@ div.scrollmenu {
 
 .seeall-cat-mob .ant-drawer-body{
     padding-top:5px;
+}
+
+.promo-app p{
+    font-size:14px;
+    /* width:550px; */
+}
+
+.promo-createstore p{
+    font-size:14px;
+    /* width:550px; */
 }
