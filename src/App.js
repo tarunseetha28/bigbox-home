@@ -332,7 +332,7 @@ const App = () => {
         </div>
       </div>
       <div className="footer-cpr">
-        <img src={textlogo} style={{ width: "110px" }} />
+        <img src={textlogo} style={{ width: "85px" }} />
         {/* <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1> */}
         <span style={{ fontSize: "14px", color: "#7E7E7E" }}>copyrights © 2021</span>
       </div>
