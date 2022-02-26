@@ -284,9 +284,14 @@ const App = () => {
       <div className="footer">
         <div className="footer-left">
           <div className="footer-right-btn-mobile">
-            <img src={dastore} alt="" />
-            <img src={dgplay} alt="" />
-            <img src={fstore} alt="" />
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <img src={fstore} alt="" />
+            </div>
+            <div style={{ display: "flex", flexDirection: "row", columnGap: "10px" }}>
+              <img src={dastore} alt="" />
+              <img src={dgplay} alt="" />
+
+            </div>
           </div>
           <div className="footer-left-follow">
             <img src={social1} alt="" />
@@ -315,6 +320,11 @@ const App = () => {
           <span className="footer-right-span2">imagine a technology that enables users to shop virtually from<br /> any store in the world through a videocall, experiencing the <br />product live and without compromising the shopping <br /> experience!
             <br /><br />thats what bigbox is all about…<br /><br />we love hearing from our shoppers,<br />say hi to us at <a href="mailto:hello@bigbox.online"><span style={{ color: "#C9052C" }}> hello@bigbox.online</span></a></span>
         </div>
+        <div className="footer-right-mobile">
+          <span className="footer-right-span1-mobile">bigbox is a videoshopping platform that enables shoppers to discover, follow and enjoy personalised shopping experience with stores through video calls
+            imagine a technology that enables users to shop virtually from any store in the world through a videocall, experiencing the product live and without compromising the shopping experience!
+            <br /><br />thats what bigbox is all about… <br /><br />we love hearing from our shoppers, say hi to us at <a href="mailto:hello@bigbox.online"><span style={{ color: "#C9052C" }}> hello@bigbox.online</span></a></span>
+        </div>
         <div className="footer-right-btn">
           <img src={dastore} alt="" />
           <img src={dgplay} alt="" />
@@ -322,9 +332,9 @@ const App = () => {
         </div>
       </div>
       <div className="footer-cpr">
-        <img src={textlogo} style={{ width: "130px" }} />
+        <img src={textlogo} style={{ width: "110px" }} />
         {/* <h1 style={{ marginTop: "0px", marginBottom: "0px", fontSize: "45px", fontWeight: 500, color: "white" }}>bigbox</h1> */}
-        <span style={{ color: "#7E7E7E" }}>copyrights © 2021</span>
+        <span style={{ fontSize: "14px", color: "#7E7E7E" }}>copyrights © 2021</span>
       </div>
     </div >
 
