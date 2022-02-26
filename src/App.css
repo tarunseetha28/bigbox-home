@@ -9,8 +9,9 @@
     line-height: 1;
 }
 .body-margins{
-    margin-left:4%;
-    margin-right:4%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1350px;
 }
 
 a{
@@ -234,6 +235,7 @@ a{
 }
 
 .footer{
+    
     margin-top:100px;
     background-color: black;
     color:white;
@@ -705,4 +707,11 @@ div.scrollmenu {
 .promo-createstore p{
     font-size:14px;
     /* width:550px; */
+}
+
+@media (max-width:1300px) {
+    .body-margins{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 }
