@@ -341,7 +341,10 @@ a{
     display: none;
 }
 
-
+.lengthStores{
+    font-size: 18px;
+    font-weight:200 !important;
+  }
 .head1{
     font-size: 80px;
     margin-bottom: 15px;
