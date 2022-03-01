@@ -401,6 +401,7 @@ a{
         flex-direction: column;
         margin-bottom: 30px;
         row-gap:15px;
+        justify-content: left;
     }
     .footer-right-btn-mobile img{
         width: 98.64px !important;
@@ -581,9 +582,9 @@ a{
     .footer-right-btn img{
         height:18px !important;
     } 
-    .footer-right-btn-mobile img{
+    /* .footer-right-btn-mobile img{
         height:20px !important;
-    }   
+    }    */
 }
 
 @media (max-width:310px){
