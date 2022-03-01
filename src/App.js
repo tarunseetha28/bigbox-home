@@ -24,6 +24,7 @@ import dastore from './assets/dastore.svg';
 import dgplay from './assets/dgplay.svg';
 import fstore from './assets/fstore.svg';
 import textlogo from './assets/textlogo.png';
+import whitestore from './assets/whitestore.svg';
 import { Button, List, Drawer, Menu, SubMenu } from 'antd';
 import Hamburger from "./components/Hamburger";
 
@@ -111,11 +112,11 @@ const App = () => {
             <a href="https://bigbox.online/"><img src={bigboxlogo} alt="" /></a>
           </div>
           <div className="header-left-menu">
-            <ul>shop</ul>
+            {/* <ul>shop</ul> */}
             <ul>what is bigbox?</ul>
-            <ul>bigbox app</ul>
-            <ul>for business</ul>
-            <ul>help</ul>
+            <ul>integrate</ul>
+            <ul>for brands & sellers</ul>
+            {/* <ul>help</ul> */}
           </div>
         </div>
         <div className="header-right">
@@ -168,7 +169,7 @@ const App = () => {
       </div>
       <div className="mobile-cat">
         <div className="mobile-cat-item">
-          <p style={{ fontWeight: 600, marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)", marginLeft: "3%" }}>categories</p>
+          <p style={{ fontWeight: 400, marginTop: "30px", marginBottom: "0px", fontSize: "20px", color: "rgb(14, 14, 15)", marginLeft: "3%" }}>categories</p>
           <Button
             onClick={showDrawer}
             className="seeall-btn"
@@ -214,7 +215,7 @@ const App = () => {
       <div className="body-margins">
         <div className="body">
           <div className="sidebar">
-            <p style={{ fontSize: "20px", fontWeight: 600, marginTop: "0" }}>categories</p>
+            <p style={{ fontSize: "20px", fontWeight: 400, marginTop: "0" }}>categories</p>
             {
               category.map((item) => (
                 // <option onClick={() => showCat(item.id)} style={{ cursor: "pointer" }}>
@@ -235,7 +236,7 @@ const App = () => {
 
           <div className="centerbody">
             <div style={{ width: "100%" }}>
-              <p className="numberStores"><span style={{ fontSize: "20px" }}>{selectedCatName || 'grocery'}</span> <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
+              <p className="numberStores"><span style={{ fontWeight: "400", fontSize: "20px" }}>{selectedCatName || 'grocery'}</span> <span>|</span> <span className="lengthStores">{store.length}</span>  {store.length > 1 ? <span className="lengthStores">stores</span> : <span className="lengthStores">store</span>}</p>
             </div>
 
             {store.length === 0 ?
@@ -285,7 +286,7 @@ const App = () => {
         <div className="footer-left">
           <div className="footer-right-btn-mobile">
             <div style={{ display: "flex", flexDirection: "row" }}>
-              <img src={fstore} alt="" />
+              <img src={whitestore} alt="" />
             </div>
             <div style={{ display: "flex", flexDirection: "row", columnGap: "10px" }}>
               <img src={dastore} alt="" />

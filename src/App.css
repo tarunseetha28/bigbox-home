@@ -40,17 +40,17 @@ a{
 }
 
 .home-store-body h1{
-    font-size:18px;
-    color: black;
-    margin-bottom:1px;
-    margin-top:1px;
-    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1px;
+    margin-top: 12px;
 }
 
 .home-store span{
-    font-size:15px;
-    color: rgb(14, 14, 15);
-    font-weight:400;
+    color: #0e0e0fc4;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 
@@ -104,17 +104,15 @@ a{
     color: white;
     border-radius: 5px;
     width: 80%;
-}
-
-
-
- .highlight { 
     padding: 8px 13px;
-    margin-left: -10px;
 }
+
+
 
 .not__highlight{
     background: transparent;
+    color: #0e0e0fc4;
+    padding: 8px 13px;
 }
 
 .home-body-nostore >img{
@@ -346,6 +344,7 @@ a{
 .lengthStores{
     font-size: 18px;
     font-weight:200 !important;
+    color: #0e0e0fc4;
   }
 .head1{
     font-size: 80px;
@@ -354,10 +353,13 @@ a{
 }
 
 .head2{
+    color: #0e0e0fc4;
     font-size: 28px;
     margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 400;
+    margin-bottom: 10px;
+    font-weight: unset;
+    padding-bottom: 16px;
+    line-height:1.2;
 }
 .footer-right-btn-mobile{
     display:none;
@@ -401,7 +403,7 @@ a{
         row-gap:15px;
     }
     .footer-right-btn-mobile img{
-        height:30px !important;
+        width: 98.64px !important;
     }   
     .home-storeImg{
         width:240px !important;
@@ -636,7 +638,7 @@ div.scrollmenu {
     border-radius: 30px;
     padding: 12px 20px;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 400;
     color: rgb(14, 14, 15);
     line-height: 105%;
     width: auto;
@@ -663,7 +665,6 @@ div.scrollmenu {
 
  .cat-list{
     cursor: pointer;
-    padding: 8px 13px;
     margin-left: -10px;
  }
 
@@ -701,11 +702,13 @@ div.scrollmenu {
 
 .promo-app p{
     font-size:14px;
+    line-height:1.2;
     /* width:550px; */
 }
 
 .promo-createstore p{
     font-size:14px;
+    line-height:1.2;
     /* width:550px; */
 }
 

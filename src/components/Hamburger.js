@@ -33,11 +33,11 @@ const Hamburger = () => {
                 placement="right"
                 onClose={onClose}
                 visible={visible}>
-                <a href=""><p className='hammenu-items'>shop</p></a>
+                {/* <a href=""><p className='hammenu-items'>shop</p></a> */}
                 <a href=""><p className='hammenu-items'>what is bigbox?</p></a>
-                <a href=""><p className='hammenu-items'>bigbox app</p></a>
-                <a href=""><p className='hammenu-items'>for business</p></a>
-                <a href=""><p className='hammenu-items'>help</p></a>
+                <a href=""><p className='hammenu-items'>integrate</p></a>
+                <a href=""><p className='hammenu-items'>for brands & sellers</p></a>
+                {/* <a href=""><p className='hammenu-items'>help</p></a> */}
                 <div style={{ display: "flex", justifyContent: "left", flexWrap: "wrap", gap: "15px" }}>
                     <a href="https://apps.apple.com/us/app/bigbox-videoshopping/id1542908804">
                         <img src={appstore} style={{ height: "40px" }} />
